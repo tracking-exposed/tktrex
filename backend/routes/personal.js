@@ -121,7 +121,7 @@ async function getPersonalCSV(req) {
     if(!_.size(csv))
         return { text: "Data not found: are you sure you've any pornhub homepage acquired?" };
 
-    const filename = 'potrex-homepages-' + moment().format("YY-MM-DD") + ".csv"
+    const filename = 'tktrex-homepages-' + moment().format("YY-MM-DD") + ".csv"
     return {
         headers: {
             "Content-Type": "csv/text",
@@ -155,7 +155,7 @@ async function getUnwindedHomeCSV(req) {
         _.size(csv), _.size(data), amount, skip, CSV_MAX_SIZE);
 
     if(!_.size(csv))
-        return { text: "Data not found: are you sure you've any pornhub homepage acquired?" };
+        return { text: "Data not found: are you sure you've any tiktok homepage acquired?" };
 
     const filename = 'unwinded-home-' + moment().format("YY-MM-DD") + "-" + _.size(data) + ".csv";
     return {

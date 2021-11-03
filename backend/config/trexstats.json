@@ -1,7 +1,7 @@
 {
     "mongoHost": "localhost",
     "mongoPort": "27017",
-    "mongoDb": "potrex",
+    "mongoDb": "tktrex",
 
     "stats": [ {
         "name": "supporters",
