@@ -43,3 +43,25 @@ npm run watch
 
 
 4) Start your mongodb and navigate to tiktok. You should see receive some feedback about the data collected in the dev tool console.
+
+## MongoDB schema
+By default the database is set to be reachable at mongodb://localhost:27017/tktrex
+
+The db properties can be changed in backend/config/settings.json
+
+### DBs
+There are 4 different databases:
+
+- admin
+- config
+- local
+- tktrex
+
+### Collections
+
+- local/startup_log: contains info regarding the starting of the mongodb such as *startTime*
+- tktrex/htmls: holds the htmls snippets of the extracted content, alongside with some of the metadata
+- tktrex/metadata
+- tktrex/supporters
+
+##
