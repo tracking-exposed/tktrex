@@ -4,6 +4,7 @@ const crypto = require('crypto');
 const bs58 = require('bs58');
 const nacl = require('tweetnacl');
 const foodWords = require('food-words');
+const nconf = require('nconf');
 
 function hash(obj, fields) {
     if(_.isUndefined(fields))
@@ -124,6 +125,11 @@ function getString(req, what) {
     return rv;                                                                          
 }                                                                                       
 
+function parseIntNconf(name, def) {
+    const value = nconf.get(name) ? nconf.get(name) : def;
+    return _.parseInt(value);
+}
+
 module.exports = {
     hash,
     stringToArray,
@@ -134,4 +140,5 @@ module.exports = {
     pickFoodWord,
     getInt,                                                                     
     getString,
+    parseIntNconf,
 };
