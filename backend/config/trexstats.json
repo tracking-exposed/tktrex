@@ -24,7 +24,7 @@
             }
         ]
     }, {
-        "name": "contributions",
+        "name": "metadata",
         "column": "metadata",
         "timevar": "savingTime",
         "variables": [
@@ -42,7 +42,7 @@
             }
         ]
     }, {
-        "name": "sizes",
+        "name": "htmls",
         "column": "htmls",
         "timevar": "savingTime",
         "variables": [
